@@ -6,10 +6,12 @@ public static class BlockedUserChecker
 {
     public static int CountBlocked(List<int> blockedIds, int[] requestIds)
     {
+        // blockedIds is a List<int>. The Contains() method searches the list sequentially until it finds the ID or reaches the end
+        var blockedSet = blockedIds.ToHashSet();
         var blocked = 0;
-        foreach (var id in requestIds)
+        foreach (var id in requestIds) // take O(n)
         {
-            if (blockedIds.Contains(id))
+            if (blockedSet.Contains(id)) // take O(1) 
                 blocked++;
         }
         return blocked;
