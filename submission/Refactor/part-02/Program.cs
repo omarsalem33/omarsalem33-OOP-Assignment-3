@@ -5,9 +5,21 @@ Console.WriteLine("=== Reports ===");
 var outDir = Path.Combine(Path.GetTempPath(), "refactoring-lab-part02");
 Directory.CreateDirectory(outDir);
 
-new CsvReportExporter().Export(Path.Combine(outDir, "report.csv"));
-new JsonReportExporter().Export(Path.Combine(outDir, "report.json"));
-new TextReportExporter().Export(Path.Combine(outDir, "report.txt"));
+// new CsvReportExporter().Export(Path.Combine(outDir, "report.csv"));
+// new JsonReportExporter().Export(Path.Combine(outDir, "report.json"));
+// new TextReportExporter().Export(Path.Combine(outDir, "report.txt"));
+
+var loader = new ReportDataLoader();
+var validator = new ReportValidator();
+var dataProvider = new ReportDataProvider(loader, validator);
+IReportSaver saver = new SaveReport();
+
+var csvExporter = new CsvReportExporter(dataProvider, new CsvFormatter(), saver);
+var jsonExporter = new JsonReportExporter(dataProvider, new CsvFormatter(), saver);
+var textExporter = new TextReportExporter(dataProvider, new CsvFormatter(), saver);
+
+
+
 Console.WriteLine($"Wrote reports to {outDir}");
 Console.WriteLine();
 
