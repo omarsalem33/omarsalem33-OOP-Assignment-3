@@ -15,12 +15,21 @@ class Program
         // Console.WriteLine("2990101123456".IsValidEgyptianNationalId());
 
 
-        var std1 = new Student(1, "Omar");
-        var std2 = new Student(2, "Ahmed");
+        var std1 = new Student(id: 1, name: "Omar");
+        var std2 = new Student(id: 2, name: "Ahmed");
+
+        Console.WriteLine($"Adding student {std1.Name} with ID {std1.Id}");
+        Console.WriteLine($"Adding student {std2.Name} with ID {std2.Id}");
+
         var store = new Store<Student>();
         store.Add(std1);
-        store.Add(std2);
+        store.Add(std2); 
+
+        var allStudents = store.GetAll();
+        foreach (var student in allStudents)
+        {
+            Console.WriteLine($"- {student.Name} (ID: {student.Id})");
+        }
         
-        Console.WriteLine( );
     }
 }

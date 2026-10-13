@@ -2,29 +2,27 @@ namespace src;
 
 public class Store<T>where T :IHasId
 {
-    private List<T> _items = new List<T>();
+    private Dictionary<int,T> _items = new Dictionary<int, T>();
 
     public void Add(T item)
     {
-        _items.Add(item);
+        if(_items.ContainsKey(item.Id))
+            throw new ArgumentException($"An item with Id {item.Id} already exists.", nameof(item));
+        
+        _items.Add(item.Id,item);
+        
     }
 
     public T GetById(int id)
     {
-        foreach (var item in _items)
-        {
-            if (item.Id == id)
-                return item;
-        }
-        return default(T);
+        return _items.ContainsKey(id) ? _items[id]: default(T);
     }
-    public List<T> GetAll()
-        => _items;
+    public IReadOnlyCollection<T> GetAll()
+        => _items.Values;
 
     public void Remove(T item)
     {
-        if(GetById(item.Id) != null)
-            _items.Remove(item);
+        _items.Remove(item.Id);
     }
     
 }
