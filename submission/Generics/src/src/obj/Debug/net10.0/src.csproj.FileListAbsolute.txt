@@ -1,0 +1,15 @@
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\bin\Debug\net10.0\src.exe
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\bin\Debug\net10.0\src.deps.json
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\bin\Debug\net10.0\src.runtimeconfig.json
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\bin\Debug\net10.0\src.dll
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\bin\Debug\net10.0\src.pdb
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.AssemblyInfoInputs.cache
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.AssemblyInfo.cs
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.csproj.CoreCompileInputs.cache
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.sourcelink.json
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.dll
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\refint\src.dll
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.pdb
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\src.genruntimeconfig.cache
+D:\.NET Course\Assignments\C# Assingments\omarsalem33-OOP-Assignment-3\submission\Generics\src\src\obj\Debug\net10.0\ref\src.dll
