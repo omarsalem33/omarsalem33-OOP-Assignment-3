@@ -1,6 +1,6 @@
 namespace src;
 
-public class Course:IEntity
+public class Course:IHasId
 {
     public Course(int id, string title, decimal price)
     {
@@ -15,6 +15,3 @@ public class Course:IEntity
     public decimal Price { get; set; }
     
 }
-
-public class CourseStore:Store<Course>
-{ }

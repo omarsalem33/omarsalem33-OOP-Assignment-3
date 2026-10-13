@@ -1,6 +1,6 @@
 namespace src;
 
-public class Store<T>where T :IEntity
+public class Store<T>where T :IHasId
 {
     private List<T> _items = new List<T>();
 

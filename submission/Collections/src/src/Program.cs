@@ -17,7 +17,7 @@ class Program
 
         var std1 = new Student(1, "Omar");
         var std2 = new Student(2, "Ahmed");
-        var store = new StudentStore();
+        var store = new Store<Student>();
         store.Add(std1);
         store.Add(std2);
         
